@@ -7,7 +7,7 @@ RUN go mod download
 COPY . .
 RUN go build -o app
 
-FROM alpine:latest
+FROM godleon/nettools:latest
 LABEL maintainer="Elf Gzp <gzp@741424975@gmail.com> (https://elfgzp.cn)"
 COPY --from=builder /opt/app ./
 RUN chmod +x /app
