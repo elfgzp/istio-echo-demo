@@ -12,5 +12,5 @@ LABEL maintainer="Elf Gzp <gzp@741424975@gmail.com> (https://elfgzp.cn)"
 WORKDIR /
 COPY --from=builder /opt/app ./
 RUN chmod +x /app
-EXPOSE 8088
+EXPOSE 8080
 CMD ["/app"]
